@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
+//Jonathan Isaac Garcia Mijares
 //Elementos
 @Composable
 fun Contenido(){
