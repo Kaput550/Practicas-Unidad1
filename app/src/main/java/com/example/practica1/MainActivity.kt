@@ -16,7 +16,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
@@ -62,9 +61,10 @@ fun GreetingPreview() {
 @Composable
 fun GreetingText(name:String, ctrl: String, modifier: Modifier = Modifier){
     Column (
+        modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,)
-    {
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         Text(
             text = name,
             fontSize = 80.sp,
