@@ -69,7 +69,7 @@ fun ContentHomeView(navController: NavController){
                 iconResId = R.drawable.afc,
                 size = 300
             ){
-                //navController.navigate("Detail/${id}")
+                navController.navigate("AFC")
             }
 
         }

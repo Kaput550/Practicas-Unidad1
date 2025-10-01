@@ -15,6 +15,11 @@ import com.example.appnfl.view.NFCView
 import com.example.appnfl.view.NewYorkGiantsView
 import com.example.appnfl.view.PanthersView
 import com.example.appnfl.view.SplashScreen
+import com.example.appnfl.view.AFCView
+import com.example.appnfl.view.BillsView
+import com.example.appnfl.view.JetsView
+import com.example.appnfl.view.DolphinsView
+import com.example.appnfl.view.PatriotsView
 
 @Composable
 fun NavManager() {
@@ -32,6 +37,9 @@ fun NavManager() {
         composable("NFC"){
             NFCView(navController)
         }
+        composable("AFC"){
+            AFCView(navController)
+        }
         composable("Panthers"){
             PanthersView()
         }
@@ -43,6 +51,18 @@ fun NavManager() {
         }
         composable("Packers"){
             GreenBayPackersView()
+        }
+        composable("Bills"){
+            BillsView()
+        }
+        composable("Jets"){
+            JetsView()
+        }
+        composable("Dolphins"){
+            DolphinsView()
+        }
+        composable("Patriots"){
+            PatriotsView()
         }
     }
 }
