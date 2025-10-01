@@ -44,9 +44,6 @@ fun HomeView(navController: NavController){
                 )
             )
         },
-        /*floatingActionButton = {
-            ActionButton()
-        }*/
 
     ){
         ContentHomeView(navController)
